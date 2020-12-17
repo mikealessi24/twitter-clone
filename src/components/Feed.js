@@ -11,6 +11,7 @@ export default function Feed() {
       </div>
       <TweetBox />
       <Post />
+      <Post />
     </div>
   );
 }
