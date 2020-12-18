@@ -19,27 +19,24 @@ export default function Post({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="/portfolioImg.jpeg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Mike Alessi{" "}
+              {displayName}{" "}
               <span className="post__headerSpecial">
-                @alessimg24
-                <VerifiedUserIcon className="post__badge" />
+                @{username}
+                {verified && <VerifiedUserIcon className="post__badge" />}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>sample text</p>
+            <p>{text}</p>
           </div>
           <div className="img-container">
-            <img
-              src="https://freepngimg.com/thumb/dragon_ball/23399-8-dragon-ball-goku-photos.png"
-              alt="tweet"
-            />
+            <img src={image} alt="tweet" />
           </div>
           <div className="post__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
