@@ -15,11 +15,11 @@ export default function Widgets() {
       </div>
       <div className="widgets__widgetContainer">
         <h2>What's happening</h2>
-        <TwitterTweetEmbed tweetId={"1335693296220266496"} />
+        <TwitterTweetEmbed tweetId={"1342933490275385347"} />
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="nyjets"
-          options={{ height: "270px" }}
+          screenName="codedailybot"
+          options={{ height: "350px" }}
         />
       </div>
     </div>
